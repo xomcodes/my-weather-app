@@ -13,7 +13,7 @@ date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(
 // this.state = {
 //   date: date
 // };
-today.getDate(api.key)
+
 
 function App() {
   const[city, setCity] = useState('')
