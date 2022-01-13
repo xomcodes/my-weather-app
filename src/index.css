@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,97 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+
+body{
+  font-family:"monserate", sans-serif
+}
+
+.App{
+  background-image: url(./assets/winter.jpg);
+   background-size: cover; 
+   transition: 0.4 ease-out;
+  
+}
+
+.App.summer{
+    background-image: url(./assets/summer.jpg);
+}
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient( rgba( 0,0,0,0.2), rgba(8, 8, 17, 0.75));
+}
+
+
+
+.check-search{
+  width: 40%;
+  display: block;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  background-color:lavender;
+  
+
+}
+
+.location{
+  padding-top: 70px;
+  color: white;
+  font-size: 50px;
+  font-weight: 500px;
+  text-shadow:3px 4px rgba(24, 43, 43, 0.568);
+}
+
+.date{
+  font-size: 25px;
+  color: white;
+  text-shadow:1px 2px rgba( 24,43,43,0.568) ;
+  font-style: italic;
+}
+
+.temp{
+  margin: 40px auto;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color:rgba(255,255,255,0.2);
+  border-radius: 16px;
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 3px 3px rgba(255,255,255,0.2);
+  box-shadow: 3px 4px rgba( 0,0,0,0.2);
+
+}
+
+.weather{
+color: white;
+font-size: 45px;
+font-weight: 600;
+text-shadow:4px 2px rgba( 24,43,43,0.568) ;
+}
+
+
+.pressure{
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+  text-shadow:4px 2px rgba( 24,43,43,0.568) ;
+  margin-top: 40px;
+  }
+
+  @media (max-width: 576px) {
+
+    pressure{
+    font-size:20px;
+    
+    }
+  }
